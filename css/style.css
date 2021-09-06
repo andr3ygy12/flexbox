@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     display: flex;
@@ -17,7 +20,7 @@ main{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #f6bd60;
+    background-color: #FFB344; /*f6bd60*/
 }
 
 .nav{
@@ -39,7 +42,9 @@ main{
     text-decoration: none;
     color: #f7ede2;
     font-size: 1.5rem;
+    margin-right: 1rem;
 }
+
 
 .hero-image{
     background-image: url("../assets/img/alvan-nee-T-0EW-SEbsE-unsplash.jpg");
@@ -64,7 +69,7 @@ h1{
 }
 
 footer{
-    background-color: tomato;
+    background-color: #FFB344; /*FFB344*/
 }
 
 .texto{
@@ -78,7 +83,6 @@ footer{
     font-size: 3rem;
     text-align: center;
     margin: 1rem;
-    font-family: 'Raleway', sans-serif;
 }
 
 .img-contenedor{
@@ -99,13 +103,15 @@ footer{
     background-color: #ef476f;
     text-align: center;
     color:rgb(228, 228, 228);
-    font-size: 2rem;
-    padding: 16px;
+    font-size: 1.5rem;
+    padding: .5rem;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
     font-weight: normal;
+    border-radius: 5px;
+    border: none;
 
 }
 
@@ -122,13 +128,17 @@ footer{
     justify-content: space-between;
 }
 .contacto-contenedor-2 a{
-    color: #fff;
+    color: #FFF8E5;
+    font-weight: normal;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-right: 16px;
     
 }
 
+.footer{
+    padding: 10px;
+}
 .items-2{
     text-align: center;
     flex-basis: 100%;
@@ -136,15 +146,28 @@ footer{
 
 .footer-title{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF8E5;
+    font-weight: bold;
 }
 
+.items-2 p{
+    font-family: 'Noto Serif', serif;
+}
 
+.contacto-contenedor p{
+    color: #fff;
+    font-size: 1.1rem;
+}
 
 @media screen and (min-width:1024px) {
     .header-main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .svg-logo{
+        margin-left: 1rem;
     }
     .nav ul{
         display: flex;
@@ -156,7 +179,7 @@ footer{
     }
     .ul-header a:hover{
         text-decoration: underline;
-        color: #fff;
+        color: #FFF8E5;
     }
     h1{
         font-size: 5vw;
@@ -198,6 +221,7 @@ footer{
     .link-botton{
         width: 30%;
         border-radius: 10px;
+        padding: 16px;
     }
     
     .link-botton:hover{
@@ -213,35 +237,34 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16px;
     }
     .contacto-contenedor,
     .contacto-contenedor-2{
         flex-basis: 50%;
     }
-
-    .contacto-contenedor p{
-        color: #fff;
-        font-size: 1.2rem;
-    }
+    
     .items-2{
         text-align: center;
         padding: 16px;
     }
 
     .contacto-contenedor-2 a{
+        color: #FFF8E5;
         display: inline-block;
         margin: 10px;
         margin-right: 3rem;
         font-size: 1.5rem;
         
     }
+    .contacto-contenedor p{
+        font-size: 1.2rem;
+    }
 
     .contacto-contenedor-2 a:hover{
+        color: #E05D5D;
         text-decoration: underline;
     }
     .footer-title{
         text-align: center;
-        color: #fff;
     }
 }
