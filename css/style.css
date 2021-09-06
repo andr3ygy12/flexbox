@@ -128,7 +128,7 @@ footer{
     justify-content: space-between;
 }
 .contacto-contenedor-2 a{
-    color: #FFF8E5;
+    color: #fff;
     font-weight: normal;
     text-decoration: none;
     font-size: 1.3rem;
@@ -147,7 +147,7 @@ footer{
 .footer-title{
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color: #FFF8E5;
+    color: #000;
     font-weight: bold;
 }
 
@@ -156,7 +156,7 @@ footer{
 }
 
 .contacto-contenedor p{
-    color: #fff;
+    color: #000;
     font-size: 1.1rem;
 }
 
@@ -249,7 +249,6 @@ footer{
     }
 
     .contacto-contenedor-2 a{
-        color: #FFF8E5;
         display: inline-block;
         margin: 10px;
         margin-right: 3rem;
@@ -261,7 +260,7 @@ footer{
     }
 
     .contacto-contenedor-2 a:hover{
-        color: #E05D5D;
+        color: #A45D5D;
         text-decoration: underline;
     }
     .footer-title{
